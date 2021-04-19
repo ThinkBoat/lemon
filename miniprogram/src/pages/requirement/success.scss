@@ -1,0 +1,16 @@
+.weui-msg {
+  height: 100vh;
+
+  .weui-msg__icon-area {
+    display: flex;
+    justify-content: center;
+  }
+
+  .weui-btn {
+    background: #0c00bf;
+  }
+
+  .weui-btn:hover {
+    background: #4940cf;
+  }
+}

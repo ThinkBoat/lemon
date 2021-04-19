@@ -1,0 +1,36 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/requirement/curd",
+          "pathName": "pages/requirement/curd",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/achievement/index",
+          "pathName": "pages/achievement/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/requirement/success",
+          "pathName": "pages/requirement/success",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

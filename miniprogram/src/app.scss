@@ -1,0 +1,14 @@
+// $color-brand: #0c00bf;
+// $color-brand-light: #4940cf;
+// $color-brand-dark: #0a0099;
+
+// @import "~taro-ui/dist/style/index.scss";
+
+@import "./assets/styles/weui.wxss";
+
+.page {
+  background: rgb(237, 237, 237);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

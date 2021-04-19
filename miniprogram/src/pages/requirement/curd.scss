@@ -1,0 +1,45 @@
+.weui-cells__group {
+  margin-bottom: 32px;
+}
+
+.weui-cells__group .weui-cells {
+  margin-top: 0px;
+}
+
+.weui-cells__group .weui-cells:before,
+.weui-cells__group .weui-cells:after {
+  border: none;
+}
+
+.weui-cells__group .weui-cells .weui-cell {
+  padding: 32px;
+}
+
+.weui-cells__group .weui-cells .weui-cell_big {
+  font-size: 40px;
+}
+
+.weui-cells__group .weui-cells .weui-cell:before {
+  left: 32px;
+  right: 32px;
+}
+
+.weui-btn_cell {
+  background: #0c00bf;
+  color: #fff;
+  border-radius: 0%;
+}
+
+.weui-btn_cell:hover {
+  background: #4940cf;
+}
+
+.weui-label {
+  text-align: center;
+  text-align-last: justify;
+}
+
+.weui-label.weui-label_required:before {
+  content: "*";
+  color: red;
+}

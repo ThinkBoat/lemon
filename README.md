@@ -11,4 +11,4 @@
 
 ## 用例图
 
-![用例图](/docs/images/成果云.png)
+![用例图](/docs/images/成果云用例图.png)

@@ -1,0 +1,72 @@
+@startuml 成果云用例图
+left to right direction
+skinparam packageStyle rectangle
+actor Teacher
+actor Student
+actor Alumni
+actor Guest
+"导师" as Teacher
+"学生" as Student
+"校友" as Alumni
+"访客" as Guest
+rectangle 成果云 {
+    (ManageTeam)  <|-- (NewTeam)
+    (ManageTeam)  <|-- (InviteUser)
+    (ManageSubject) <|-- (NewSubject)
+    (ManageSubject) <|-- (ExportSubject)
+    (ManageTeamAchievement) <|-- (ReviewAchievement)
+    (ManageTeamAchievement) <|-- (BindAchievement)
+    (PersonalAchievement) <|-- (PublishAchievement)
+    (PersonalAchievement) <|-- (SubmitAchievement)
+    (PublishAchievement) <|-- (PaperAchievement)
+    (PublishAchievement) <|-- (IPAchievement)
+    (PublishAchievement) <|-- (IntermediateAchievement)
+    (Subject) <|-- (SubjectAchievement)
+    (Subject) <|-- (SubjectDetail)
+    (Team) <|-- (JoinTeam)
+    (Home) <|-- (TeamShow)
+    (Home) <|-- (AchievementShow)
+    (Home) <|-- (SubjectShow)
+    Teacher --> (ManageTeam)
+    Teacher --> (ManageSubject)
+    Teacher --> (ManageTeamAchievement)
+    Teacher --> (PersonalAchievement)
+    Teacher --> (Subject)
+    Teacher --> (Team)
+    Teacher --> (Home)
+    Teacher --> (Contact)
+    Student --> (PersonalAchievement)
+    Student --> (Subject)
+    Student --> (Team)
+    Student --> (Home)
+    Student --> (Contact)
+    Alumni -->  (Home)
+    Alumni --> (Contact)
+    Guest --> (Home)
+    "主页" as (Home)
+    "团队展示" as (TeamShow)
+    "成果展示" as (AchievementShow)
+    "项目课题展示" as (SubjectShow)
+    "管理团队" as (ManageTeam)
+    "新建团队" as (NewTeam)
+    "我的团队" as (Team)
+    "邀请成员" as (InviteUser)
+    "管理项目课题" as (ManageSubject)
+    "项目课题" as (Subject)
+    "新建项目课题" as (NewSubject)
+    "查看项目课题详情" as (SubjectDetail)
+    "查看项目课题成果" as (SubjectAchievement)
+    "导出项目课题资料" as (ExportSubject)
+    "管理团队成果" as (ManageTeamAchievement)
+    "成果审核" as (ReviewAchievement)
+    "绑定成果到项目课题" as (BindAchievement)
+    "申请加入团队" as (JoinTeam)
+    "个人成果" as (PersonalAchievement)
+    "发布成果" as (PublishAchievement)
+    "论文成果" as (PaperAchievement)
+    "知识产权成果" as (IPAchievement)
+    "中间成果" as (IntermediateAchievement)
+    "提交成果给团队" as (SubmitAchievement)
+    "师门通讯录" as (Contact)
+}
+@endumls

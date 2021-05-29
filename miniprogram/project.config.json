@@ -9,5 +9,13 @@
     "postcss": false,
     "minified": false
   },
-  "compileType": "miniprogram"
+  "compileType": "miniprogram",
+  "supportedMaterials": [
+    {
+      "materialType": "application/pdf",
+      "name": "打开",
+      "desc": "描述",
+      "path": "pages/home/index"
+    }
+  ]
 }
